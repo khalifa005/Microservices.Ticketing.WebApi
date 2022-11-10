@@ -107,5 +107,6 @@ Since this is going to be a more RabbitMQ centric implementation, I will skip th
 # Shared Model Library
 Create a new .NET Core Library Project and Name is ‘Shared.Models’. Here we will define the shared models, which in our case is a simle Ticket Model.
 
-# IMPORTANT – Note that it is necessary to have a shared Model class that is used by both the Publisher / Consumer. This is so because RabbitMQ treats messages based on it’s namespaces. if the received message and outgoing message are of different namespace (signatures), RabbitMQ would not recognize the Consumer.
+# IMPORTANT 
+Note that it is necessary to have a shared Model class that is used by both the Publisher / Consumer. This is so because RabbitMQ treats messages based on it’s namespaces. if the received message and outgoing message are of different namespace (signatures), RabbitMQ would not recognize the Consumer.
 
